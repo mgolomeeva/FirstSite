@@ -1,0 +1,19 @@
+{%extends "base.html"%}
+
+
+
+
+
+
+{%block content%}
+<div style="background-color: pink">
+<h1>{{cat.name}}</h1> {# kogato iskame da se visualizira neshto ot view v html  #}
+</div>
+
+{%for quote in quotes %}
+<div style="background-color: olive; margin: 10px; float: left;">
+<div>{{quote.description}}</div>
+</div>
+
+{%endfor%}
+{%endblock%}

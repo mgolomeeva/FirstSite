@@ -1,0 +1,20 @@
+{%extends "base.html"%}
+
+
+
+
+
+
+{%block content%}
+<div style="background-color: pink">
+<h1>{{random_quote}}</h1> {# kogato iskame da se visualizira neshto ot view v html  #}
+</div>
+
+{%for category in categories%}
+<div style="background-color: olive; margin: 10px; float: left;">
+<div>{{category.name}}</div>
+<div>{{category.description}}</div>
+</div>
+
+{%endfor%}
+{%endblock%}
